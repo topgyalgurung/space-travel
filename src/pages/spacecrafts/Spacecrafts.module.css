@@ -1,0 +1,95 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.spacecrafts {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+
+  padding: 0.5rem 0;
+}
+
+.spacecrafts__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  border: 1px dotted white;
+  margin: 20px 100px 10px 100px;
+  /* margin-bottom: 10px; */
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8); /* Added dark background */
+  justify-content: space-between; /* Added to push content to edges */
+}
+
+.spacecrafts__info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.spacecrafts__destroy-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.spacecrafts__destroy-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.spacecrafts__title {
+  color: white;
+  margin-left: 50px;
+  border: "1px dotted rgba(255,255,255,0.3)";
+  padding: "10px";
+  border-radius: "4px";
+  cursor: "pointer";
+}
+
+.built_button {
+  margin-top: 30px;
+  margin-left: 5px;
+  padding: 8px 15px;
+  background: transparent;
+  color: white;
+}
+
+.built_button a {
+  border: 1px solid rgb(136, 136, 136);
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-right: 3px;
+}
+.built_button a:hover {
+  background: rgba(255, 255, 255, 0.1); /* Added hover effect */
+}
+
+.spacecrafts__image {
+  border: 1px dotted #ccc;
+  width: 100px; /* Set fixed width */
+  height: 100px; /* Set fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spacecrafts__image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.spacecrafts__image_icon {
+  font-size: 1rem; /* Adjust size of rocket emoji */
+  margin: 0;
+  text-decoration: none; /* Remove underline */
+}

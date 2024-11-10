@@ -1,0 +1,22 @@
+/* RootLayout.module.css */
+
+.nav {
+  text-align: center;
+  margin-top: 20px;
+  border-color: white;
+}
+
+.nav__link {
+  margin: 0 1.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  margin: 0 1.25rem;
+  color: white;
+  text-decoration: none;
+}

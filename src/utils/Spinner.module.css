@@ -1,0 +1,42 @@
+.spinner {
+  color: white;
+  text-align: center;
+  padding: 40px 120px;
+  border: 2px solid white;
+  width: fit-content;
+  margin: 20% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loadingDots {
+  height: 60px;
+}
+
+.loadingDots::after {
+  display: block;
+  content: "";
+  animation: verticalDots 2s steps(4, end) infinite;
+  white-space: pre-line;
+  line-height: 1.2;
+}
+
+@keyframes verticalDots {
+  0%,
+  5% {
+    content: "";
+  }
+  10% {
+    content: ".\A";
+  }
+  17% {
+    content: ".\A.\A";
+  }
+  25% {
+    content: ".\A.\A.\A";
+  }
+  32% {
+    content: ".\A.\A.\A.\A";
+  }
+}

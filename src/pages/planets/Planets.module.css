@@ -1,0 +1,157 @@
+/* Main container */
+.planets {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+/* Planet block */
+.planet {
+  position: relative;
+  border: 2px dotted white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.planet:hover {
+  border-color: #666;
+}
+
+.planet--selected {
+  border-color: #4a90e2;
+}
+
+.planet__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 1px dotted #ccc;
+  border-radius: 8px;
+}
+
+.planet__image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.planet__info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05rem;
+}
+
+.planet__title {
+  margin: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.planet__subtitle {
+  color: #ccc;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Spacecraft block */
+.spacecraft {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.spacecraft__item {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  padding: 8px;
+  width: 120px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.spacecraft__item--clickable {
+  cursor: pointer;
+}
+
+.spacecraft__item--clickable:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.spacecraft__text {
+  font-size: 0.5rem;
+  margin: 2px 0;
+  text-align: center;
+  color: white; /* Add this line */
+}
+
+.spacecraft__picture {
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 40px; /* Change from auto to fixed width */
+  height: 40px; /* Change from auto to fixed height */
+  max-width: 30%;
+  max-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacecraft__info {
+  align-self: flex-start;
+  margin-left: -8px;
+  width: 100%;
+  padding: 4px 8px;
+}
+
+/* Selection block */
+.selection {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection__button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.selection__button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.selection__text {
+  color: white;
+  margin: 0;
+}
+
+/* Loading state */
+.spinner {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
