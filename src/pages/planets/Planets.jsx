@@ -36,6 +36,9 @@ const Planets = () => {
 
   return (
     <div className={styles.planets}>
+      <h2 className={styles.title}>
+        Select a different planet and select the spacecraft to send to it
+      </h2>
       {/* Render a card for each planet */}
       {planets?.map((planet) => (
         <PlanetCard

@@ -44,6 +44,14 @@
   margin-bottom: 15px;
 }
 
+.title {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .planet__info {
   padding: 1rem;
   display: flex;
