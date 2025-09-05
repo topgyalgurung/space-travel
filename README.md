@@ -1,8 +1,46 @@
+# 🚀 Space Travel Project
+
+Welcome to the **Space Travel** project!  
+This web application imagines a not-so-distant future where humankind has expanded beyond Earth, colonizing habitable environments across the solar system. Built to aid in humanity’s interplanetary migration, the app allows commanders to manage spacecraft, planets, and interstellar operations.
+
+---
+
+## 🌌 Features
+
+- **Home Page**
+  - A welcoming entry point outlining the application’s functionality.
+
+- **Spacecrafts Page**
+  - Displays a list of all spacecraft with their details.
+  - Provides navigation for:
+    - Viewing specific spacecraft information.
+    - Constructing new spacecraft.
+    - Decommissioning (removing) existing spacecraft.
+
+- **Spacecraft Detail Page**
+  - Presents comprehensive information about a single spacecraft.
+
+- **Construction Page**
+  - Allows creation of new spacecraft.
+  - Includes form validation (name, capacity, description).
+  - Navigation back to the previous page.
+
+- **Planets Page**
+  - Lists all planets and stationed spacecraft.
+  - Enables dispatching spacecraft to different planets (destination must differ from current location).
+
+- **Other Features**
+  - Integrated logging to monitor API response times.
+  - Redirects all unmatched routes to the homepage.
+
+---
+
+
+
 ## API 🔌
 
-Our back-end engineers have developed an API for the web application. For this project, you are given a mock API in the starter code that stores the data in the local storage. You shouldn't touch the `/services/SpaceTravelMockApi.js` file, which mimics the back-end. Instead, you should use `/services/SpaceTravelApi.js`, which uses the API. In real life, you should create such a file that uses the `axios` library to use an API.
-
-Hint: You can clear the local storage to start from scratch.
+`/services/SpaceTravelMockApi.js` file, which mimics the back-end. `/services/SpaceTravelApi.js` uses the API. 
+In real life, create such a file that uses the `axios` library to use an API. Clear the local storage to start from scratch.
 
 ### Data Structures
 
@@ -38,7 +76,7 @@ Hint: You can clear the local storage to start from scratch.
   currentLocation: <int>
 }
 ```
-
+___
 ### Methods
 
 #### getPlanets
@@ -76,7 +114,7 @@ Transfer people by sending the spacecraft from its currently located planet to t
 
 ## Folder Structure
 
-The folder structure designed by our software architects ensures adherence to best practices:
+The folder structure designed ensures adherence to best practices:
 
 - `components`: Contains components that are used as building blocks for pages.
 - `context`: Contains providers that enable consuming components to subscribe to context changes.
@@ -84,6 +122,15 @@ The folder structure designed by our software architects ensures adherence to be
 - `routes`: Contains components that have route rendering logic.
 - `services`: Contains services to reach external APIs.
 
-This project employs CSS modules for component-specific styling and embraces the BEM methodology for naming conventions. Aspired developers are encouraged to explore these practices further.
+This project employs CSS modules for component-specific styling and embraces the BEM methodology for naming conventions.
 
-View the rubric for this assessment [here](https://storage.googleapis.com/hatchways.appspot.com/employers/springboard/student_rubrics/Space%20Travel%20Rubric.pdf)
+
+🚧 Future Enhancements: 
+	•	Add authentication for commanders.
+	•	Support spacecraft categories (cargo, passenger, defense).
+	•	Enhance UI with animations and 3D visualizations.
+	•	Enable multiplayer collaboration.
+
+
+👨‍🚀 Author: 
+	•	Topgyal Gurung (@topgyalgurung)
